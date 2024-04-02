@@ -135,3 +135,23 @@ begin
    Init;
 end.
 {--------------------------------------------------------------}
+
+{ Parse and Translate a Math Expression }
+
+procedure Expression;
+begin
+   EmitLn('MOVE #' + GetNum + ',D0')
+end;
+{---------------------------------------------------------------}
+
+
+And add the  line  "Expression;"  to  the main program so that it
+reads:
+
+
+{---------------------------------------------------------------}
+begin
+   Init;
+   Expression;
+end.
+{---------------------------------------------------------------}
